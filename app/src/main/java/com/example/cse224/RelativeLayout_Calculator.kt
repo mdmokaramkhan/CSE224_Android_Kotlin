@@ -27,10 +27,10 @@ class RelativeLayout_Calculator : AppCompatActivity() {
         btn1.setOnClickListener {
             if(toggle) {
                 image.setImageResource(R.drawable.a)
-                toggle = false
+                toggle = !toggle
             } else {
                 image.setImageResource(R.drawable.b)
-                toggle = true
+                toggle = !toggle
             }
         }
     }
